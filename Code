@@ -1,0 +1,24 @@
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(50),
+    price INT,
+    category VARCHAR(50)
+);
+INSERT INTO products (product_id, product_name, price, category) VALUES
+(1, 'Laptop', 1200, 'Electronics'),
+(2, 'T-Shirt', 25, 'Apparel'),
+(3, 'Smartphone', 800, 'Electronics'),
+(4, 'Desk Chair', 350, 'Furniture'),
+(5, 'Headphones', 150, 'Electronics'),
+(6, 'Coffee Mug', 10, 'Home Decor'),
+(7, 'External SSD', 200, 'Electronics'),
+(8, 'Jeans', 50, 'Apparel'),
+(9, 'Dining Table', 600, 'Furniture'),
+(10, 'Socks', 8, 'Apparel');
+
+SELECT * FROM products;
+SELECT * FROM products WHERE price > 500;
+SELECT * FROM products WHERE category = 'Electronics';
+SELECT * FROM products ORDER BY price;
+
+
